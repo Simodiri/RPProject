@@ -1,0 +1,2 @@
+progetto
+-DCATKIN_DEVEL_PREFIX=/home/simodiri/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/simodiri/catkin_ws/install -G Unix Makefiles
