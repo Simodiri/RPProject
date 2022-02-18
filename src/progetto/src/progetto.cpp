@@ -86,17 +86,16 @@ try
   int size = std::ceil((angle_max-angle_min)/angle_increment/sample_num); //size of the scan
   
   cerr << "count_msg" << count_msg << endl;
-
+  
   if(count_msg==0){ // initial scan 
     Eigen::Isometry2f MTB=getTransform("map","base_link");
     Eigen::Isometry2f BTL=getTransform("base_link","base_laser_link");
-    laser_matcher=std::unique_ptr<ICP>(new ICP(MTB*BTL,BTL,10,size,draw));//compute ICP to find the isometry
+    laser_matcher=std::unique_ptr<ICP>(new ICP(BTL,MTB*BTL,10,size,draw));//compute ICP to find the isometry
   }
 
    if(count_msg>1) {
     laser_matcher->updateOld();
-    
-  }
+   }
    int ok=count_msg!=0; //tells if it is more than the first scan
        
     float line;
@@ -108,7 +107,7 @@ try
     idx++;
     float a = line*cos(angle);
     float b = line*sin(angle);
-    laser_matcher->setSet(ok,idx, Eigen::Vector2f(a,b));
+    laser_matcher->setVal(ok,idx, Eigen::Vector2f(a,b));
   }
   count_msg++;
    if(count_msg==1) return;
@@ -118,7 +117,7 @@ try
    auto mtb=laser_matcher->MTB(); //returns the pose of the base_link frame wrt map frame
    cerr << "Matrix MTB computed" << endl;
   cerr << mtb.matrix() << endl;
-
+  cerr<<mtb.translation().transpose()<<endl;
   //get traslation and rotation of the isometry
   geometry_msgs::Pose2D::Ptr pose_msg;
    pose_msg = boost::make_shared<geometry_msgs::Pose2D>();

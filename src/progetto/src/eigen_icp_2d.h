@@ -55,9 +55,12 @@ public:
       
       void resizeNew(int size){_moving.resize(size);}
       
-      void updateOld(){_fixed.swap(_moving);} //change the old one with the new one
+      void updateOld(){//_fixed.swap(_moving);
+       ContainerType _temp=_fixed;
+       _fixed=_moving;
+       } //change the old one with the new one
       
-       void setSet(const int ok, const int idx, Eigen::Vector2f value){
+       void setVal(const int ok, const int idx, Eigen::Vector2f value){
        if(ok)
          _moving[idx]=value;
        else
