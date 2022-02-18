@@ -149,23 +149,7 @@ try
 
         br.sendTransform(tf_msg);
 }
-  /*if(draw == 2){
-    cout << "set size 1,1" << endl;
-    cout <<"set xzeroaxis"<< endl;
-    cout <<"set xtics axis"<< endl;
-    cout <<"set xrange [-15:15]"<< endl;
-    cout <<"set arrow 1 from -15,0 to -15,0"<< endl;
-    cout <<"set arrow 2 from  15,0 to  15,0"<< endl;
-    cout <<"set yzeroaxis"<< endl;
-    cout <<"set ytics axis"<< endl;
-    cout <<"set yrange [-10:10]"<< endl;
-    cout <<"set arrow 3 from 0,-10,0 to 0,-10"<< endl;
-    cout <<"set arrow 4 from 0,10,0  to 0,10"<< endl;
-    cout <<"set border 0"<< endl;
-    cout << "plot '-' w p ps 2" << endl;
-    cout << mtb.translation().transpose() << endl;
-    cout << "e" << endl;
-    }*/
+ 
 }
 int main(int argc, char **argv){ 
      ROS_INFO("Laser matcher activation...");
