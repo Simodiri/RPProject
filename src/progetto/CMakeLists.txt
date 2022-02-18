@@ -204,6 +204,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-add_executable(progetto src/progetto.cpp)
+add_executable(progetto src/progetto.cpp src/eigen_icp_2d.cpp)
 target_link_libraries(progetto ${catkin_LIBRARIES})
 include_directories("/usr/include/eigen3")

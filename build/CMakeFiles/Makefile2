@@ -136,7 +136,7 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory progetto
 
 # Recursive "all" directory target.
-progetto/all:
+progetto/all: progetto/CMakeFiles/progetto.dir/all
 
 .PHONY : progetto/all
 
@@ -146,21 +146,53 @@ progetto/preinstall:
 .PHONY : progetto/preinstall
 
 # Recursive "clean" directory target.
-progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-progetto/clean: progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-progetto/clean: progetto/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-progetto/clean: progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-progetto/clean: progetto/CMakeFiles/roscpp_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/progetto.dir/clean
+progetto/clean: progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
+progetto/clean: progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_generate_messages_eus.dir/clean
 progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 progetto/clean: progetto/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 progetto/clean: progetto/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-progetto/clean: progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-progetto/clean: progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+progetto/clean: progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+progetto/clean: progetto/CMakeFiles/tf_generate_messages_lisp.dir/clean
+progetto/clean: progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+progetto/clean: progetto/CMakeFiles/_catkin_empty_exported_target.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
 progetto/clean: progetto/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 progetto/clean: progetto/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+progetto/clean: progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+progetto/clean: progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+progetto/clean: progetto/CMakeFiles/tf_generate_messages_eus.dir/clean
+progetto/clean: progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+progetto/clean: progetto/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+progetto/clean: progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+progetto/clean: progetto/CMakeFiles/tf_generate_messages_cpp.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+progetto/clean: progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+progetto/clean: progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+progetto/clean: progetto/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+progetto/clean: progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
+progetto/clean: progetto/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+progetto/clean: progetto/CMakeFiles/tf_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/roscpp_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+progetto/clean: progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+progetto/clean: progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+progetto/clean: progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 .PHONY : progetto/clean
 
@@ -409,193 +441,247 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target progetto/CMakeFiles/progetto.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_py.dir/all
+progetto/CMakeFiles/progetto.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/progetto.dir/build.make progetto/CMakeFiles/progetto.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/progetto.dir/build.make progetto/CMakeFiles/progetto.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num=9,10,11 "Built target progetto"
+.PHONY : progetto/CMakeFiles/progetto.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/progetto.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/progetto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : progetto/CMakeFiles/progetto.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: progetto/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+progetto: progetto/CMakeFiles/progetto.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : progetto
 
 # clean rule for target.
-progetto/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+progetto/CMakeFiles/progetto.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/progetto.dir/build.make progetto/CMakeFiles/progetto.dir/clean
+.PHONY : progetto/CMakeFiles/progetto.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+# Target rules for target progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_nodejs"
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+tf2_msgs_generate_messages_nodejs: progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : std_msgs_generate_messages_nodejs
+.PHONY : tf2_msgs_generate_messages_nodejs
 
 # clean rule for target.
-progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_lisp"
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+tf2_msgs_generate_messages_lisp: progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : roscpp_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_lisp
 
 # clean rule for target.
-progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/roscpp_generate_messages_eus.dir
+# Target rules for target progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_eus.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_eus.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_eus.dir/all
+progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_lisp"
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_eus: progetto/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+actionlib_msgs_generate_messages_lisp: progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : roscpp_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_lisp
 
 # clean rule for target.
-progetto/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_eus.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+# Target rules for target progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_nodejs"
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+actionlib_msgs_generate_messages_nodejs: progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_nodejs
+.PHONY : actionlib_msgs_generate_messages_nodejs
 
 # clean rule for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target progetto/CMakeFiles/actionlib_generate_messages_py.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+progetto/CMakeFiles/actionlib_generate_messages_py.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_py.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_py.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_py.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_py"
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/actionlib_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+actionlib_generate_messages_py: progetto/CMakeFiles/actionlib_generate_messages_py.dir/rule
 
-.PHONY : std_msgs_generate_messages_lisp
+.PHONY : actionlib_generate_messages_py
 
 # clean rule for target.
-progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+progetto/CMakeFiles/actionlib_generate_messages_py.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_py.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_py.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_py.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_py.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_py.dir/all
+progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_nodejs"
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: progetto/CMakeFiles/roscpp_generate_messages_py.dir/rule
+actionlib_generate_messages_nodejs: progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 
-.PHONY : roscpp_generate_messages_py
+.PHONY : actionlib_generate_messages_nodejs
 
 # clean rule for target.
-progetto/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_py.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : progetto/CMakeFiles/roscpp_generate_messages_py.dir/clean
+progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_cpp"
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# clean rule for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/actionlib_generate_messages_eus.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/actionlib_generate_messages_eus.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_eus.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_eus.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_eus.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_eus"
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/actionlib_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: progetto/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# clean rule for target.
+progetto/CMakeFiles/actionlib_generate_messages_eus.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_eus.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_eus.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_eus.dir/clean
 
 #=============================================================================
 # Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_eus.dir
@@ -679,85 +765,166 @@ progetto/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
 .PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_py"
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+tf2_msgs_generate_messages_py: progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 
-.PHONY : std_msgs_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_py
 
 # clean rule for target.
-progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+# Target rules for target progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_eus: progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+geometry_msgs_generate_messages_cpp: progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_cpp
 
 # clean rule for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target progetto/CMakeFiles/tf_generate_messages_lisp.dir
 
 # All Build rule for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+progetto/CMakeFiles/tf_generate_messages_lisp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_lisp.dir/build.make progetto/CMakeFiles/tf_generate_messages_lisp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_lisp.dir/build.make progetto/CMakeFiles/tf_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_lisp"
+.PHONY : progetto/CMakeFiles/tf_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+progetto/CMakeFiles/tf_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : progetto/CMakeFiles/tf_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+tf_generate_messages_lisp: progetto/CMakeFiles/tf_generate_messages_lisp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
 
 # clean rule for target.
-progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+progetto/CMakeFiles/tf_generate_messages_lisp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_lisp.dir/build.make progetto/CMakeFiles/tf_generate_messages_lisp.dir/clean
+.PHONY : progetto/CMakeFiles/tf_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# clean rule for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/_catkin_empty_exported_target.dir/build.make progetto/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/_catkin_empty_exported_target.dir/build.make progetto/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : progetto/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: progetto/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+progetto/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/_catkin_empty_exported_target.dir/build.make progetto/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : progetto/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/actionlib_generate_messages_lisp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_lisp"
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# clean rule for target.
+progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
 
 #=============================================================================
 # Target rules for target progetto/CMakeFiles/roscpp_generate_messages_lisp.dir
@@ -812,6 +979,735 @@ rosgraph_msgs_generate_messages_py: progetto/CMakeFiles/rosgraph_msgs_generate_m
 progetto/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# clean rule for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# clean rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# clean rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_cpp"
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_cpp: progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# clean rule for target.
+progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/tf_generate_messages_eus.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/tf_generate_messages_eus.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_eus.dir/build.make progetto/CMakeFiles/tf_generate_messages_eus.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_eus.dir/build.make progetto/CMakeFiles/tf_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_eus"
+.PHONY : progetto/CMakeFiles/tf_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/tf_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_eus: progetto/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+.PHONY : tf_generate_messages_eus
+
+# clean rule for target.
+progetto/CMakeFiles/tf_generate_messages_eus.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_eus.dir/build.make progetto/CMakeFiles/tf_generate_messages_eus.dir/clean
+.PHONY : progetto/CMakeFiles/tf_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# clean rule for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/tf_generate_messages_nodejs.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/tf_generate_messages_nodejs.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/tf_generate_messages_nodejs.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/tf_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_nodejs"
+.PHONY : progetto/CMakeFiles/tf_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/tf_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: progetto/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# clean rule for target.
+progetto/CMakeFiles/tf_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+.PHONY : progetto/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/tf_generate_messages_cpp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/tf_generate_messages_cpp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_cpp.dir/build.make progetto/CMakeFiles/tf_generate_messages_cpp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_cpp.dir/build.make progetto/CMakeFiles/tf_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_cpp"
+.PHONY : progetto/CMakeFiles/tf_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/tf_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: progetto/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# clean rule for target.
+progetto/CMakeFiles/tf_generate_messages_cpp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_cpp.dir/build.make progetto/CMakeFiles/tf_generate_messages_cpp.dir/clean
+.PHONY : progetto/CMakeFiles/tf_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_eus"
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# clean rule for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# clean rule for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# clean rule for target.
+progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : progetto/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# clean rule for target.
+progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: progetto/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+progetto/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/std_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : progetto/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# clean rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_eus"
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_eus: progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_eus
+
+# clean rule for target.
+progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
+.PHONY : progetto/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/roscpp_generate_messages_eus.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_eus.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_eus.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: progetto/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# clean rule for target.
+progetto/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_eus.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/tf_generate_messages_py.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/tf_generate_messages_py.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_py.dir/build.make progetto/CMakeFiles/tf_generate_messages_py.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_py.dir/build.make progetto/CMakeFiles/tf_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target tf_generate_messages_py"
+.PHONY : progetto/CMakeFiles/tf_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/tf_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/tf_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: progetto/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# clean rule for target.
+progetto/CMakeFiles/tf_generate_messages_py.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/tf_generate_messages_py.dir/build.make progetto/CMakeFiles/tf_generate_messages_py.dir/clean
+.PHONY : progetto/CMakeFiles/tf_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/roscpp_generate_messages_py.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_py.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_py.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: progetto/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# clean rule for target.
+progetto/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_py.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/roscpp_generate_messages_cpp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# clean rule for target.
+progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : progetto/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# clean rule for target.
+progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+.PHONY : progetto/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_py"
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_py
+
+# clean rule for target.
+progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/actionlib_generate_messages_cpp.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_cpp"
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# clean rule for target.
+progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+.PHONY : progetto/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/simodiri/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/simodiri/catkin_ws/build/CMakeFiles 0
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# clean rule for target.
+progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : progetto/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
