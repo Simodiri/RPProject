@@ -90,7 +90,7 @@ try
   if(count_msg==0){ // initial scan 
     Eigen::Isometry2f MTB=getTransform("map","base_link");
     Eigen::Isometry2f BTL=getTransform("base_link","base_laser_link");
-    laser_matcher=std::unique_ptr<ICP>(new ICP(MTB*BTL,BTL,10,size,draw));//compute ICP to find the isometry
+    laser_matcher=std::unique_ptr<ICP>(new ICP(BTL,MTB*BTL,10,size,draw));//compute ICP to find the isometry
   }
 
    if(count_msg>1) {
