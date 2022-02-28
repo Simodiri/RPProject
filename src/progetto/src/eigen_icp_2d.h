@@ -4,7 +4,9 @@
 #include <iostream>
 #include <list>
 #include <memory>
-
+#include <iostream>
+#include <fstream>
+using namespace std;
 using Vector2f = Eigen::Vector2f;
 
 class ICP {
@@ -55,9 +57,9 @@ public:
       
       void resizeNew(int size){_moving.resize(size);}
       
-      void updateOld(){//_fixed.swap(_moving);
-       ContainerType _temp=_fixed;
-       _fixed=_moving;
+      void updateOld(){
+      _fixed.swap(_moving);
+      
        } //change the old one with the new one
       
        void setVal(const int ok, const int idx, Eigen::Vector2f value){

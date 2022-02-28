@@ -30,8 +30,8 @@ void ICP::computeCorrespondences(){
       continue;
     else
       _correspondences[k]._fixed=*ft; //it's a list
-    _correspondences[k]._moving=m_prime;
-      ++k;
+      _correspondences[k]._moving=m_prime;
+       ++k;
      }
   _correspondences.resize(k);
 
@@ -56,13 +56,15 @@ void ICP::draw(std::ostream& os) {
 void ICP::optimizeCorrespondences() {
   Eigen::Matrix<float, 3, 3> H;
   Eigen::Matrix<float, 3, 1> b;
+  
   H.setZero();
   b.setZero();
   Eigen::Matrix<float, 2, 3> J;
-  J.block<3,3>(0,0).setIdentity();
+   J.block<2,3>(0,0).setIdentity();
   _num_kernelized=0;
   _num_inliers=0;
   _chi2_sum=0;
+ 
   for (const auto& c: _correspondences) {
     const auto& f=c._fixed;
     const auto& m=c._moving;

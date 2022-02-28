@@ -90,15 +90,15 @@ try
   if(count_msg==0){ // initial scan 
     Eigen::Isometry2f MTB=getTransform("map","base_link");
     Eigen::Isometry2f BTL=getTransform("base_link","base_laser_link");
-    laser_matcher=std::unique_ptr<ICP>(new ICP(BTL,MTB*BTL,10,size,draw));//compute ICP to find the isometry
+    laser_matcher=std::unique_ptr<ICP>(new ICP(BTL,MTB*BTL,20,size,draw));//compute ICP to find the isometry
   }
 
    if(count_msg>1) {
-    laser_matcher->updateOld();
+      laser_matcher->updateOld();
    }
    int ok=count_msg!=0; //tells if it is more than the first scan
        
-    float line;
+  float line;
   float angle=angle_min;
   int idx=0;
   for(int i=0; i<size; i+=1){
@@ -110,14 +110,18 @@ try
     laser_matcher->setVal(ok,idx, Eigen::Vector2f(a,b));
   }
   count_msg++;
-   if(count_msg==1) return;
-
+  if(count_msg==1) return;
+   cerr << "check seg" << endl;
+   laser_matcher->run(10);
+   cerr << "done check" << endl;
+ 
    laser_matcher->updateMTL(); //update the isometry
 
    auto mtb=laser_matcher->MTB(); //returns the pose of the base_link frame wrt map frame
+   
    cerr << "Matrix MTB computed" << endl;
   cerr << mtb.matrix() << endl;
-  cerr<<mtb.translation().transpose()<<endl;
+ 
   //get traslation and rotation of the isometry
   geometry_msgs::Pose2D::Ptr pose_msg;
    pose_msg = boost::make_shared<geometry_msgs::Pose2D>();
@@ -130,7 +134,7 @@ try
     auto bto= getTransform("odom", "base_link").inverse();//from odom to base link
     //mto*otb=tmb => mto=mtb*otb^-1
     auto mto = mtb*bto;
-    // publish modom->base_link
+    // publish odom->base_link
      static tf2_ros::TransformBroadcaster br;
      geometry_msgs::TransformStamped tf_msg;
        tf_msg.header.stamp = ros::Time::now();
@@ -148,23 +152,6 @@ try
 
         br.sendTransform(tf_msg);
 }
-  /*if(draw == 2){
-    cout << "set size 1,1" << endl;
-    cout <<"set xzeroaxis"<< endl;
-    cout <<"set xtics axis"<< endl;
-    cout <<"set xrange [-15:15]"<< endl;
-    cout <<"set arrow 1 from -15,0 to -15,0"<< endl;
-    cout <<"set arrow 2 from  15,0 to  15,0"<< endl;
-    cout <<"set yzeroaxis"<< endl;
-    cout <<"set ytics axis"<< endl;
-    cout <<"set yrange [-10:10]"<< endl;
-    cout <<"set arrow 3 from 0,-10,0 to 0,-10"<< endl;
-    cout <<"set arrow 4 from 0,10,0  to 0,10"<< endl;
-    cout <<"set border 0"<< endl;
-    cout << "plot '-' w p ps 2" << endl;
-    cout << mtb.translation().transpose() << endl;
-    cout << "e" << endl;
-    }*/
 }
 int main(int argc, char **argv){ 
      ROS_INFO("Laser matcher activation...");
