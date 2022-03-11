@@ -90,11 +90,9 @@ try
   if(count_msg==0){ // initial scan 
     Eigen::Isometry2f MTB=getTransform("map","base_link");
     Eigen::Isometry2f BTL=getTransform("base_link","base_laser_link");
-<<<<<<< HEAD
+
     laser_matcher=std::unique_ptr<ICP>(new ICP(BTL,MTB*BTL,20,size,draw));//compute ICP to find the isometry
-=======
-    laser_matcher=std::unique_ptr<ICP>(new ICP(BTL,MTB*BTL,10,size,draw));//compute ICP to find the isometry
->>>>>>> d9dfb2d611543eb9c158871e3142955525d3a1dc
+
   }
 
    if(count_msg>1) {
@@ -156,10 +154,7 @@ try
 
         br.sendTransform(tf_msg);
 }
-<<<<<<< HEAD
-=======
- 
->>>>>>> d9dfb2d611543eb9c158871e3142955525d3a1dc
+
 }
 int main(int argc, char **argv){ 
      ROS_INFO("Laser matcher activation...");
