@@ -5,4 +5,4 @@ In order to start it, follow this steps:
 - Start roscore, stage and map_server and rviz that will be used to take the laser_scans
 - Change the fixed frame from "map" to "odom"
 - Place the laser_scan
-- Run "rosrun progetto progetto draw=1.0 tfsend=1.0" and move your robot using either a joystick or the keyboard. It will return the transformations calculated with ICP and the final transformation from a laser_scan to another.
+- Run "rosrun progetto progetto" and move your robot using either a joystick or the keyboard. It will return the transformations calculated with ICP and the final transformation from a laser_scan to another.
