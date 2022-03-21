@@ -16,20 +16,6 @@ Eigen/Core
 Eigen/Eigenvalues
 -
 
-/home/simodiri/catkin_ws/src/progetto/src/eigen_icp_2d.cpp
-eigen_icp_2d.h
-/home/simodiri/catkin_ws/src/progetto/src/eigen_icp_2d.h
-Eigen/Geometry
-/home/simodiri/catkin_ws/src/progetto/src/Eigen/Geometry
-rotations.h
-/home/simodiri/catkin_ws/src/progetto/src/rotations.h
-Eigen/Cholesky
-/home/simodiri/catkin_ws/src/progetto/src/Eigen/Cholesky
-iostream
--
-fstream
--
-
 /home/simodiri/catkin_ws/src/progetto/src/eigen_icp_2d.h
 eigen_kdtree.h
 /home/simodiri/catkin_ws/src/progetto/src/eigen_kdtree.h

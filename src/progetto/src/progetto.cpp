@@ -121,7 +121,7 @@ try
 
    auto mtb=laser_matcher->MTB(); //returns the pose of the base_link frame wrt map frame
    
-   cerr << "Matrix MTB computed" << endl;
+   cerr << "Matrix MTB (map to base_link) computed" << endl;
   cerr << mtb.matrix() << endl;
  
   //get traslation and rotation of the isometry
@@ -132,12 +132,16 @@ try
   pose_msg->theta = Eigen::Rotation2Df(mtb.rotation()).angle();
   pose_pub.publish(pose_msg);
   ros::Rate r(10); // 10 hz
-  if(tf_send){
-    auto bto= getTransform("odom", "base_link").inverse();//from odom to base link
-    //mto*otb=tmb => mto=mtb*otb^-1
+  //if(tf_send==1){
+     cerr << "Send the transform" << endl;
+
+    auto bto= getTransform("odom", "base_link").inverse();//from base_link to odom
+    //mto*otb=mtb => mto=mtb*otb^-1
     auto mto = mtb*bto;
     // publish odom->base_link
-     static tf2_ros::TransformBroadcaster br;
+   cerr << "Matrix map to odom" << endl;
+   cerr<< mto.matrix()<<endl;
+    static tf2_ros::TransformBroadcaster br;
      geometry_msgs::TransformStamped tf_msg;
        tf_msg.header.stamp = ros::Time::now();
         tf_msg.header.frame_id = "/map";
@@ -151,9 +155,8 @@ try
         tf_msg.transform.rotation.y = q.y();
         tf_msg.transform.rotation.z = q.z();
         tf_msg.transform.rotation.w = q.w();
-
         br.sendTransform(tf_msg);
-}
+	//}
 
 }
 int main(int argc, char **argv){ 
@@ -162,8 +165,6 @@ int main(int argc, char **argv){
 
    ros::NodeHandle n; //initialize a node
     ros::Rate loop_rate(10);
-    n.getParam("draw",draw);
-    n.getParam("tfsend",tf_send);
     pose_pub=n.advertise<geometry_msgs::Pose2D>("/pose2D", 1000);//publish the pose
     tf2_ros::TransformListener tfListener(tfBuffer);
    ros::Subscriber base_sub=n.subscribe("/base_scan",1000,LaserCallBack);// subscriber to receive the laser scan commands
