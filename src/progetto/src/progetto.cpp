@@ -33,8 +33,8 @@ ros::Publisher pose_pub;
 tf2_ros::Buffer tfBuffer;
 int count_msg=0;
 std::unique_ptr<ICP> laser_matcher;
-int draw; //parameter if you want to draw points for gnuplot, use as debugger
-int tf_send; //parameter if you want to send tf computed and not only 2dpose
+
+//int tf_send; //parameter if you want to send tf computed and not only 2dpose
 float sample_num=2;//sample interval
 //Calculates the transform
 const Eigen::Isometry2f getTransform(const std::string& from, const std::string& to) {
@@ -110,6 +110,7 @@ try
     float a = line*cos(angle);
     float b = line*sin(angle);
     laser_matcher->setVal(ok,idx, Eigen::Vector2f(a,b));
+    
   }
   count_msg++;
   if(count_msg==1) return;
@@ -122,28 +123,26 @@ try
    auto mtb=laser_matcher->MTB(); //returns the pose of the base_link frame wrt map frame
    
    cerr << "Matrix MTB (map to base_link) computed" << endl;
-  cerr << mtb.matrix() << endl;
+   cerr << mtb.matrix() << endl;
  
-  //get traslation and rotation of the isometry
+  //get traslation and rotation of the isometry and update the pose 2d
   geometry_msgs::Pose2D::Ptr pose_msg;
-   pose_msg = boost::make_shared<geometry_msgs::Pose2D>();
+  pose_msg = boost::make_shared<geometry_msgs::Pose2D>();
   pose_msg->x = mtb.translation()(0);
   pose_msg->y = mtb.translation()(1);
   pose_msg->theta = Eigen::Rotation2Df(mtb.rotation()).angle();
   pose_pub.publish(pose_msg);
-  ros::Rate r(10); // 10 hz
-  //if(tf_send==1){
-     cerr << "Send the transform" << endl;
-
-    auto bto= getTransform("odom", "base_link").inverse();//from base_link to odom
+ 
+  cerr << "Send the transform" << endl;
+  auto bto= getTransform("odom", "base_link").inverse();//from base_link to odom
     //mto*otb=mtb => mto=mtb*otb^-1
-    auto mto = mtb*bto;
+  auto mto = mtb*bto;
     // publish odom->base_link
-   cerr << "Matrix map to odom" << endl;
-   cerr<< mto.matrix()<<endl;
-    static tf2_ros::TransformBroadcaster br;
-     geometry_msgs::TransformStamped tf_msg;
-       tf_msg.header.stamp = ros::Time::now();
+  cerr << "Matrix map to odom" << endl;
+  cerr<< mto.matrix()<<endl;
+        static tf2_ros::TransformBroadcaster br;
+        geometry_msgs::TransformStamped tf_msg;
+        tf_msg.header.stamp = ros::Time::now();
         tf_msg.header.frame_id = "/map";
         tf_msg.child_frame_id = "/odom";
         tf_msg.transform.translation.x = mto.translation()(0);
@@ -160,17 +159,13 @@ try
 
 }
 int main(int argc, char **argv){ 
-     ROS_INFO("Laser matcher activation...");
+   ROS_INFO("Laser matcher activation...");
    ros::init(argc,argv,"progetto");
 
    ros::NodeHandle n; //initialize a node
-    ros::Rate loop_rate(10);
     pose_pub=n.advertise<geometry_msgs::Pose2D>("/pose2D", 1000);//publish the pose
-    tf2_ros::TransformListener tfListener(tfBuffer);
-   ros::Subscriber base_sub=n.subscribe("/base_scan",1000,LaserCallBack);// subscriber to receive the laser scan commands
-   
-   ROS_INFO("Subscriber started to %s",argv[1]);
-   
+   tf2_ros::TransformListener tfListener(tfBuffer);
+   ros::Subscriber base_sub=n.subscribe("/base_scan",1000,LaserCallBack);// subscriber to receive the laser scan commands 
    ROS_INFO("Make the robot move in order to receive laser scans");
    ros::spin();
    ros::shutdown();

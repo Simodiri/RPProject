@@ -59,7 +59,7 @@ public:
       
       void updateOld(){
       _fixed.swap(_moving);
-      
+     
        } //change the old one with the new one
       
        void setVal(const int ok, const int idx, Eigen::Vector2f value){
